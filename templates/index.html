@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Adhu ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Georgia,serif;
+  text-align:center;
+  color:#762443;
+  background:linear-gradient(135deg,#ffe0eb,#fff7fa,#ffd6e5);
+}
+section{padding:65px 20px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center}
+h1{font-size:clamp(40px,9vw,70px);margin:20px 0;color:#a51f50}
+h2{font-size:34px}
+p{font-size:18px;line-height:1.9}
+.card{
+  max-width:650px;margin:22px auto;padding:28px;
+  border-radius:24px;background:#ffffffd9;
+  box-shadow:0 8px 30px #9b31501a;line-height:1.9;
+}
+button{
+  padding:15px 25px;border:0;border-radius:30px;
+  background:#a51f50;color:white;font-size:16px;cursor:pointer;
+}
+.heart{font-size:36px;animation:beat 1s infinite}
+#secret{display:none;font-size:21px}
+@keyframes beat{50%{transform:scale(1.2)}}
+footer{padding:30px}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div>
+<p>💕 A little surprise made with love by Riz 💕</p>
+<h1>Happy Birthday,<br>Adhu! ❤️</h1>
+<p>October 29, 2026 🎂</p>
+<p>Distance keeps us apart, but you'll always be close to my heart.</p>
+<a href="#letter"><button>Open Your Surprise 💌</button></a>
+<div class="heart">💗</div>
+</div>
+</section>
+
+<section>
+<h2>Why You're Special to Me 🥹</h2>
+<div class="card">
+<h3>💖 Your Smile</h3>
+<p>Your smile makes my day brighter, even from miles away.</p>
+</div>
+<div class="card">
+<h3>🫶 Your Heart</h3>
+<p>I love your caring heart and all the little things that make you YOU.</p>
+</div>
+<div class="card">
+<h3>🌙 Our Love</h3>
+<p>No distance can erase the beautiful place you have in my heart.</p>
+</div>
+</section>
+
+<section id="letter">
+<h2>A Letter for You 💌</h2>
+<div class="card">
+<p>Happy birthday, my dearest Adhu! ❤️</p>
+<p>I wish I could be beside you today, hug you tightly, see your beautiful smile and celebrate your special day together.</p>
+<p>Even though we are far apart, you are always in my thoughts. If I could wish for one thing today, it would be to see you happy and make all your dreams come true.</p>
+<p>Thank you for being a special part of my life. I can't wait for the day when I can finally hug you instead of just wishing I could.</p>
+<p>Until then, imagine this website as one big hug from me to you! 🫂💕</p>
+<h3>Forever yours,<br>Riz ❤️</h3>
+</div>
+</section>
+
+<section>
+<h2>One Last Surprise 🎁</h2>
+<p>Adhu, tap the button below! There's a secret message just for you. 💗</p>
+<button onclick="showLove()">Tap Here, Birthday Boy ❤️</button>
+<div class="card" id="secret">
+<p>🥹❤️ My favourite person, if I could be anywhere right now, I'd be right beside you.</p>
+<p>Until that day comes, remember that Riz is sending you the biggest hug and a million kisses!</p>
+<h2>I LOVE YOU, ADHU! 💋</h2>
+</div>
+</section>
+
+<footer>Made with endless love by Riz, just for Adhu 💕</footer>
+
+<script>
+function showLove(){
+  document.getElementById("secret").style.display="block";
+  for(let i=0;i<25;i++){
+    let h=document.createElement("span");
+    h.innerText=["💗","💕","❤️","💖"][Math.floor(Math.random()*4)];
+    h.style.cssText="position:fixed;left:"+Math.random()*100+"%;top:"+Math.random()*100+"%;font-size:28px;pointer-events:none";
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),2500);
+  }
+}
+</script>
+</body>
+</html>
